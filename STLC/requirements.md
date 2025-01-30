@@ -24,6 +24,7 @@ The webshop has the following basic functionalities:
 1. Can a user submit a rating and written feedback successfully?
 2. Does the system allow only valid inputs (e.g., star ratings between 1-5)?
 3. Are users able to edit or delete their submitted ratings and feedback?
+4. Can users rate only products they have purchased?
    
 **Usability**:
 1. Is the rating system user-friendly and intuitive?
@@ -66,6 +67,7 @@ Users can edit or delete their ratings/feedback, and duplicate submissions for t
 **Detailed Requirement**:
 
 Users must confirm they are 18+ via a modal when accessing the alcoholic products category.
+The popup appears **only** when navigating to alcoholic product pages, not on other pages.
 Input must accept only numeric values; users under 18 or with invalid input are denied access.
 The modal must reappear for new sessions or after clearing cookies.
 
@@ -89,4 +91,3 @@ Free shipping for orders above a certain amount. Orders below this amount will i
 Orders above a configurable threshold ($20) qualify for free shipping; otherwise, a shipping fee is applied.
 Shipping costs update dynamically when items are added or removed and must reflect in the total cost breakdown.
 Users should see a message when they qualify for free shipping.
-
