@@ -1,131 +1,137 @@
 **Test Plan for GroceryMate - New Features**
 
-### 1. **Analyze the Product**
+---
 
-**Objective**
+### **1. Overview**
 
-This test plan outlines the testing approach for the new features of the GroceryMate webshop. The aim is to validate that these features meet the specified requirements and deliver a seamless user experience.
+#### **Objective**
 
-**User Stakeholders**
+This test plan outlines the approach for validating new features introduced in the GroceryMate webshop. The goal is to ensure these features function as expected, integrate smoothly with existing functionalities, and provide a seamless user experience.
 
-GroceryMate will primarily be used by:
+#### **New Features Under Test**
 
-- **General Consumers:** Individuals who want to browse, search, and purchase groceries online.
-- **Retailers & Vendors:** Businesses that list their products on GroceryMate for customers to buy.
-- **Admin & Support Teams:** Staff responsible for maintaining the website, resolving issues, and managing users.
+- **Product Rating System**: Allows customers to rate and review products.
+- **Age Verification for Alcoholic Products**: Restricts purchases based on age validation.
+- **Dynamic Shipping Cost Calculation**: Automatically updates shipping costs based on user input.
 
-**Hardware and Software Specifications**
+#### **Key Risks to Mitigate**
 
-**Hardware Requirements:**
+- Users being unable to leave or view ratings properly.
+- Age verification being bypassed or failing incorrectly.
+- Incorrect shipping costs leading to checkout issues or abandoned carts.
 
-- **Devices:** PCs, laptops, smartphones, tablets
-- **Specifications:** Standard configurations for Android and iOS devices, desktops with minimum 4GB RAM, 2GHz processor
+---
 
-**Software Requirements:**
+### **2. Scope of Testing**
 
-- **Operating Systems:** Windows, macOS, Android, iOS
+#### **In Scope**
+
+- **Core functionalities of new features** (Rating, Age Verification, Shipping Cost Calculation).
+- **User interactions with these features**, including login dependencies.
+- **Integration with existing checkout and purchase flows.**
+- **Frontend and backend validation of age verification.**
+- **Usability testing to ensure ease of use and clarity.**
+- **Performance testing for dynamic calculations under various conditions.**
+
+#### **Out of Scope**
+
+- Security validation of third-party payment gateways.
+- Backend database performance optimization.
+- Load testing beyond expected usage scenarios.
+
+---
+
+### **3. Testing Approach**
+
+#### **Testing Strategy**
+
+1. **Exploratory Testing** (Initial Phase)
+
+   - Conduct unscripted testing to identify usability issues and edge cases.
+   - Explore potential user paths, including error handling.
+
+2. **Structured Test Execution**
+
+   - Develop test cases based on feature specifications.
+   - Execute functional, usability, performance, and security tests.
+
+3. **Regression Testing**
+
+   - Ensure new features do not introduce issues into existing workflows.
+
+#### **Types of Testing**
+
+- **Functional Testing:** Validate expected behavior of each new feature.
+- **Usability Testing:** Assess ease of use from a customer’s perspective.
+- **Performance Testing:** Ensure real-time calculations work efficiently.
+- **Security Testing:** Confirm proper handling of sensitive user data.
+- **Regression Testing:** Identify unintended side effects on existing functionality.
+
+---
+
+### **4. Test Objectives**
+
+| Feature                   | Key Test Objectives                                                                                                                            |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Product Rating System     | Ensure users can submit, edit, and delete ratings correctly. Validate display of average ratings and reviews.                                  |
+| Age Verification          | Confirm valid users can purchase restricted products while underage users are blocked. Check handling of network failures or incorrect inputs. |
+| Shipping Cost Calculation | Validate price updates based on shipping address, product weight, and promotions. Test various location-based inputs.                          |
+
+---
+
+### **5. Test Environment & Resources**
+
+#### **Test Environments**
+
+- **DEV (Development):** Initial feature testing.
+- **TEST (Testing):** Dedicated environment for structured test execution.
+- **ACC (Acceptance):** Final validation before deployment.
+
+#### **Required Devices & Software**
+
+- **Devices:** Desktop (Windows/macOS), Mobile (iOS/Android)
 - **Browsers:** Chrome, Firefox, Safari, Edge
-- **Dependencies:** Backend services, third-party payment gateways, database services
+- **Tools:** Test automation framework, performance monitoring tools
 
-### 2. **Design the Test Strategy**
+#### **Team Members & Responsibilities**
 
-**Scope of Testing**
+- **Test Manager:** Oversees test planning & execution.
+- **QA Engineers:** Execute functional, usability, and performance tests.
 
-**In Scope:**
 
-- Product rating system
-- Age verification for alcoholic products
-- Dynamic shipping cost calculation
+---
 
-**Out of Scope:**
+### **6. Test Execution Plan**
 
-- Payment gateway security validation
-- Backend database performance
+| **Phase**             | **Start Date** | **End Date** | **Responsible** |
+| --------------------- | -------------- | ------------ | --------------- |
+| Exploratory Testing   | 01/08/2024     | 05/08/2024   | QA Team         |
+| Test Case Development | 06/08/2024     | 10/08/2024   | QA Team         |
+| Functional Testing    | 11/08/2024     | 20/08/2024   | QA Team         |
+| Usability Testing     | 21/08/2024     | 25/08/2024   | QA Team         |
+| Performance Testing   | 26/08/2024     | 28/08/2024   | QA Team         |
+| Regression Testing    | 29/08/2024     | 02/09/2024   | QA Team         |
+| UAT                   | 03/09/2024     | 10/09/2024   | End Users       |
 
-**Type of Testing**
+---
 
-- **Functional Testing:** Validate core functionality of the new features.
-- **Usability Testing:** Ensure features are user-friendly and intuitive.
-- **Performance Testing:** Validate response times for dynamic calculations.
-- **Security Testing:** Ensure sensitive data (e.g., age verification input) is handled securely.
-- **Regression Testing:** Verify that the new features do not affect existing functionalities.
+### **7. Test Deliverables**
 
-### 3. **Define Test Objectives**
+- **Test Plan Document** (this document)
+- **Test Cases**
+- **Test Execution Reports**
+- **Defect Reports & Bug Logs**
+- **Final Test Summary**
 
-**Functionality**
+---
 
-- Ensure new features perform as per the specified requirements.
+### **8. Exit Criteria**
 
-**Usability**
+- All critical and high-priority defects are resolved.
+- No major usability or performance issues remain.
+- Test execution is complete, and sign-off is received.
 
-- Validate the user-friendliness of the interfaces for new features.
+---
 
-**Performance**
 
-- Confirm the system’s performance under expected load conditions.
 
-**Security**
-
-- Prevent unauthorized access or misuse of new features (e.g., bypassing age verification).
-
-### 4. **Define Test Criteria**
-
-**Entry Criteria**
-
-- Feature development is complete and deployed to the test environment.
-- Test cases and data are prepared and approved.
-
-**Exit Criteria**
-
-- All planned test cases for new features have been executed.
-- No critical or high-priority defects remain open.
-- Sign-off is received from stakeholders.
-
-### 5. **Resource Planning**
-
-**Human Resources:**
-
-- Test Manager: Jane Smith
-- QA Engineer (Functional Testing): John Doe
-- QA Engineer (Usability Testing): Robert Brown
-- QA Engineer (Performance & Security Testing): Alice Johnson
-
-**Hardware Resources:**
-
-- Test devices: Desktop, smartphones, and tablets (various configurations)
-
-**Software Resources:**
-
-- Browsers: Chrome, Firefox, Safari, Edge
-- Automation and performance testing tools
-
-### 6. **Plan Test Environment**
-
-**Test Environments:**
-
-- Development (DEV): For initial testing of new features.
-- Testing (TEST): For validating the functionality and usability of new features.
-- Acceptance (ACC): For User Acceptance Testing (UAT).
-
-### 7. **Schedule and Estimation**
-
-| **Activity**              | **Start Date** | **End Date** | **Responsible**   | **Effort** |
-|---------------------------|----------------|--------------|-------------------|------------|
-| Test Planning             | 01/08/2024     | 05/08/2024   | Test Manager      | 20 hours   |
-| Test Case Design          | 06/08/2024     | 15/08/2024   | QA Team           | 40 hours   |
-| Functional Testing        | 16/08/2024     | 25/08/2024   | QA Team           | 60 hours   |
-| Usability Testing         | 26/08/2024     | 30/08/2024   | QA Team           | 30 hours   |
-| Performance Testing       | 31/08/2024     | 02/09/2024   | QA Team           | 20 hours   |
-| Regression Testing        | 03/09/2024     | 06/09/2024   | QA Team           | 40 hours   |
-| UAT                       | 07/09/2024     | 14/09/2024   | End Users         | 50 hours   |
-
-### 8. **Determine Test Deliverables**
-
-**Documents/Tools:**
-
-- Test Plan Document
-- Test Cases and Scripts
-- Test Data for Functional and Usability Testing
-- Test Summary and Execution Reports
-- Defect Reports
-- UAT Sign-Off Document
