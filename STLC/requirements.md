@@ -41,7 +41,6 @@ Users can rate products using a 5-star system and submit written feedback (max 5
 Ratings must be between 1-5 stars; feedback is optional but cannot exceed character limits.
 Users can edit or delete their ratings/feedback, and duplicate submissions for the same product are not allowed.
 
-
 ### **2. Age Verification for Alcoholic Products**
 
 **Vague Requirement**:
@@ -91,3 +90,23 @@ Free shipping for orders above a certain amount. Orders below this amount will i
 Orders above a configurable threshold ($20) qualify for free shipping; otherwise, a shipping fee is applied.
 Shipping costs update dynamically when items are added or removed and must reflect in the total cost breakdown.
 Users should see a message when they qualify for free shipping.
+
+### **4. Add to Cart Feature**
+
+**Requirement:** Users should be able to add products to their cart, and a confirmation message should be displayed.
+
+**Questions**:
+
+**Functionality:**
+1. Does clicking the "Add to Cart" button successfully add the item to the cart?
+2. Is the correct quantity updated when adding multiple items?
+3. Does the system allow adding out-of-stock items to the cart?
+
+**Usability:**
+1. Is there a pop-up confirmation message when an item is added to the cart?
+2. Is the cart updated dynamically without needing a page refresh?
+
+**Detailed Requirement:**
+When users click the "Add to Cart" button, a pop-up message should appear: "Item Successfully added to the cart."
+The cart should update dynamically, reflecting the added item immediately.
+
