@@ -123,4 +123,19 @@ As a user, my shipping costs should update dynamically based on my cart total.
 ![image](https://github.com/user-attachments/assets/130799b0-b36d-46be-ac1b-99c30ffad587)
 
 
+## **Scenario 10: Add to Cart Feature**
+As a user, I should be able to add items to my cart and manage their quantities.
+
+| Step# | Action                                  | Expected outcome                     | OK/NOK | URL            | Link to issue |
+|-------|----------------------------------------|--------------------------------------|--------|---------------|---------------|
+| 1     | Navigate to a product page             | Product page is displayed           | OK     | [Product Page](https://grocerymate.masterschool.com/product) |               |
+| 2     | Click "Add to Cart"                   | Item appears in the cart, and pop-up message showed           | OK     |               |               |
+| 3     | Increase quantity to 5                | Cart updates with correct quantity  | OK     |               |               |
+| 4     | Remove item from cart                 | Item is removed, cart updates       | OK     |               |               |
+
+**Result:** The system behaved as expected.
+
+
+
+
 
