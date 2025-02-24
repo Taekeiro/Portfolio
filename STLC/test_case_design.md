@@ -73,7 +73,7 @@
      - **Steps**: Add items worth $18, proceed to checkout, then add more items to exceed $20.
      - **Expected Result**: Shipping cost changes dynamically to reflect free shipping.
 
-**Automate?**: Automate the first and third test cases as they are critical to user satisfaction and frequently executed.
+**Automate?**: Automate all test cases as they are critical to user satisfaction and frequently executed.
 
 ---
 
