@@ -21,7 +21,7 @@
      - **Steps**: Navigate to a product with a saved rating, edit the rating to 3 stars, delete the rating.
      - **Expected Result**: Rating is updated successfully, then removed with a confirmation message.
 
-**Automate?**: Automate the first two test cases due to frequent and critical validation needs.
+**Automate?**: Automate the all 3 test cases due to frequent and critical validation needs.
 
 ---
 
