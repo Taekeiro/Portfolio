@@ -21,7 +21,7 @@
      - **Steps**: Navigate to a product with a saved rating, edit the rating to 3 stars, delete the rating.
      - **Expected Result**: Rating is updated successfully, then removed with a confirmation message.
 
-**Automate?**: Automate the all 3 test cases due to frequent and critical validation needs.
+**Automate?**: Automate all test cases, due to their critical importance to the feature's functionality.
 
 ---
 
@@ -42,11 +42,13 @@
      - **Expected Result**: Access denied with an error message.
 
 3. **State Transition Testing**:
-     - **Test Case**: Reappearance of the modal on new sessions.
-     - **Steps**: Access the alcohol section, confirm age, log out, log back in.
-     - **Expected Result**: Modal reappears to verify age again.
+     - **Test Case**: Reappearance of the modal in a new tab.
+     - **Steps**:
+          - Access the alcohol section, confirm age.
+          - Open the alcohol section in a new browser tab.
+     - **Expected Result**: The age verification modal reappears in the new tab, requiring the user to re-enter their age
 
-**Automate?**: Automate the first two test cases as age validation is critical and repetitive.
+**Automate?**: Automate all test cases as age validation is critical and repetitive.
 
 ---
 
