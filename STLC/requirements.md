@@ -39,7 +39,8 @@ The webshop has the following basic functionalities:
 **Detailed Requirement:**
 Users can rate products using a 5-star system and submit written feedback (max 500 characters).
 Ratings must be between 1-5 stars; feedback is optional but cannot exceed character limits.
-Users can edit or delete their ratings/feedback, and duplicate submissions for the same product are not allowed.
+Users can edit or delete their ratings/feedback, and duplicate submissions for the same product are not allowed. 
+Duplicate submissions are defined as multiple ratings or feedback by the same user for the same product. The system prevents this by showing the message "You have already reviewed this product."
 
 ### **2. Age Verification for Alcoholic Products**
 
@@ -50,18 +51,20 @@ Users can edit or delete their ratings/feedback, and duplicate submissions for t
 **Questions**:
 
 **Functionality:**
-1. When the notification should pop-up? (when entering the alcohol page or just at the beginning of the session)
-2. Is the modal dismissed only after valid input (e.g., entering an age above 18)?
-3. Does the system block access if invalid or no input is provided?
+1. When does the age verification modal appear? (e.g., on entering the alcohol category or at the start of the session?)
+2. What happens if the user navigates away and then returns to the alcohol category? Does the modal reappear or is the age remembered?
+3. How does the system handle invalid inputs (e.g., non-numeric values, ages under 18)? Is there an error message?
+4. Is the age verification state stored locally (e.g., cookies, session storage)? How long is this state remembered?
 
 **Security:**
 1. Is user age stored securely and compliant with privacy regulations?
-2. Can the age verification mechanism be bypassed (e.g., refreshing the page, direct URL access)?
+2. Can users bypass the age verification modal by refreshing the page or accessing a direct URL?
 3. Does the modal reappear if the user logs out or clears cookies?
 
 **Edge cases:**
 1. What happens if a user enters an invalid or edge-case age (e.g., 0, negative values, text input)?
 2. Is the age verification modal accessible and functional on all device types (desktop, mobile, tablet)?
+3. Does the modal appear correctly with browser features like back/forward navigation, or when using incognito mode?
 
 **Detailed Requirement**:
 
