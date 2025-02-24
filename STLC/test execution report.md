@@ -53,7 +53,11 @@ As a user, I should be able to access the alcohol section if I am 18 or older.
 | 2     | Enter age 18                           | Age is entered successfully         | OK     |              |               |
 | 3     | Click confirm                          | Modal disappears, access is granted | OK     |              |               |
 
-**Result:** The system behaved as expected
+**Result:** The system behaved as expected, access is granted.
+
+![image](https://github.com/user-attachments/assets/1b2493eb-a748-499b-8f50-0c7ad9758001)
+![image](https://github.com/user-attachments/assets/ca11ab3c-258c-4609-bab5-f243c67496c3)
+
 
 ## **Scenario 5: Deny access for users below 18**
 As a user, I should not be able to access the alcohol section if I am below 18.
@@ -75,7 +79,7 @@ As a user, the age verification modal should reappear when I start a new session
 |-------|----------------------------------------|--------------------------------------|--------|--------------|---------------|
 | 1     | Access the alcohol section             | Age verification modal appears      | OK     | [Alcohol Section](https://grocerymate.masterschool.com/store#) |               |
 | 2     | Confirm age                            | Modal disappears                    | OK     |              |               |
-| 3     | Log out and log back in                | Age verification modal appears again | NOK     |              | [Issue 02] (https://github.com/Taekeiro/Portfolio/issues/2#issue-2827103871)              |
+| 3     | Log out and log back in                | Age verification modal appears again | NOK     |              | [Issue 02](https://github.com/Taekeiro/Portfolio/issues/2#issue-2827103871)              |
 
 **Result:** Age verification modal do not appear again after Relog.
 
