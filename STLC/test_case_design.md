@@ -12,8 +12,8 @@
      - **Expected Result**: Rating and feedback are saved successfully with a confirmation message.
 
 2. **Equivalence Partitioning**:
-     - **Test Case**: Submit invalid star rating (e.g., 6 stars).
-     - **Steps**: Enter an invalid rating (e.g., 6 stars), click submit.
+     - **Test Case**: Submit invalid star rating (e.g., 0 stars).
+     - **Steps**: Enter an invalid rating (e.g., 0 stars), click submit.
      - **Expected Result**: Error message displayed, rating not saved.
 
 3. **Use Case Testing**:
