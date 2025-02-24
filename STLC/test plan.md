@@ -1,21 +1,18 @@
-**Test Plan for GroceryMate - New Features**
+### **Test Plan for GroceryMate - New Features**
 
 ---
 
 ### **1. Overview**
 
 #### **Objective**
-
 This test plan outlines the approach for validating new features introduced in the GroceryMate webshop. The goal is to ensure these features function as expected, integrate smoothly with existing functionalities, and provide a seamless user experience.
 
 #### **New Features Under Test**
-
 - **Product Rating System**: Allows customers to rate and review products.
 - **Age Verification for Alcoholic Products**: Restricts purchases based on age validation.
 - **Dynamic Shipping Cost Calculation**: Automatically updates shipping costs based on user input.
 
 #### **Key Risks to Mitigate**
-
 - Users being unable to leave or view ratings properly.
 - Age verification being bypassed or failing incorrectly.
 - Incorrect shipping costs leading to checkout issues or abandoned carts.
@@ -25,42 +22,42 @@ This test plan outlines the approach for validating new features introduced in t
 ### **2. Scope of Testing**
 
 #### **In Scope**
-
 - **Core functionalities of new features** (Rating, Age Verification, Shipping Cost Calculation).
 - **User interactions with these features**, including login dependencies.
 - **Integration with existing checkout and purchase flows.**
-- **Frontend and backend validation of age verification.**
 - **Usability testing to ensure ease of use and clarity.**
-- **Performance testing for dynamic calculations under various conditions.**
 
 #### **Out of Scope**
-
-- Security validation of third-party payment gateways.
-- Backend database performance optimization.
 - Load testing beyond expected usage scenarios.
+- Security validation of third-party payment gateways.
+- Integration with external APIs not controlled by GroceryMate.
+
+---
+
+### **2.1 User Analysis**
+
+#### **Target Users**
+- **Age Groups**: Primarily adults aged 18-60, including young professionals and busy families.
+- **Technical Know-how**: Moderate to high; users are familiar with online shopping platforms and mobile applications.
+- **Goals**: Efficient grocery shopping, easy product comparisons, and convenient delivery scheduling.
 
 ---
 
 ### **3. Testing Approach**
 
 #### **Testing Strategy**
-
 1. **Exploratory Testing** (Initial Phase)
-
    - Conduct unscripted testing to identify usability issues and edge cases.
    - Explore potential user paths, including error handling.
 
 2. **Structured Test Execution**
-
    - Develop test cases based on feature specifications.
    - Execute functional, usability, performance, and security tests.
 
 3. **Regression Testing**
-
    - Ensure new features do not introduce issues into existing workflows.
 
 #### **Types of Testing**
-
 - **Functional Testing:** Validate expected behavior of each new feature.
 - **Usability Testing:** Assess ease of use from a customer’s perspective.
 - **Performance Testing:** Ensure real-time calculations work efficiently.
@@ -82,22 +79,18 @@ This test plan outlines the approach for validating new features introduced in t
 ### **5. Test Environment & Resources**
 
 #### **Test Environments**
-
 - **DEV (Development):** Initial feature testing.
 - **TEST (Testing):** Dedicated environment for structured test execution.
 - **ACC (Acceptance):** Final validation before deployment.
 
 #### **Required Devices & Software**
-
 - **Devices:** Desktop (Windows/macOS), Mobile (iOS/Android)
 - **Browsers:** Chrome, Firefox, Safari, Edge
 - **Tools:** Test automation framework, performance monitoring tools
 
 #### **Team Members & Responsibilities**
-
 - **Test Manager:** Oversees test planning & execution.
 - **QA Engineers:** Execute functional, usability, and performance tests.
-
 
 ---
 
@@ -116,7 +109,6 @@ This test plan outlines the approach for validating new features introduced in t
 ---
 
 ### **7. Test Deliverables**
-
 - **Test Plan Document** (this document)
 - **Test Cases**
 - **Test Execution Reports**
@@ -126,12 +118,9 @@ This test plan outlines the approach for validating new features introduced in t
 ---
 
 ### **8. Exit Criteria**
-
 - All critical and high-priority defects are resolved.
 - No major usability or performance issues remain.
 - Test execution is complete, and sign-off is received.
 
 ---
-
-
 
