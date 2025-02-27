@@ -16,15 +16,15 @@ email_input = driver.find_element(By.XPATH, "//form[@id='contactForm']//input[@t
 contact_form = driver.find_element(By.XPATH, "//form[@id='contactForm']")
 #### 9. XPath to select the footer paragraph element.
 footer_paragraph = driver.find_element(By.XPATH, "//footer//p")
-#### 10. XPath to select the first team member's (<h4>) name
+#### 10. XPath to select the first team member's 'h4' name
 first_team_member = driver.find_element(By.XPATH, "//div[@class='team']//li[1]/h4")
 #### 11. Select the description of the second service item using XPath
 second_service_description = driver.find_element(By.XPATH, "//div[@class='service-item'][2]/p")
-#### 12. XPath to select the "Contact Us" section header (<h2> element)
+#### 12. XPath to select the "Contact Us" section header ('h2' element)
 contact_header = driver.find_element(By.XPATH, "//section[@id='contact']//h2")
 #### 13. XPath expression to select all links within the dropdown under the "Services" navigation item
 dropdown_links = driver.find_elements(By.XPATH, "//li[a[text()='Services']]//ul[@class='dropdown']//a")
-#### 14. XPath to select the first <li> under the "Our Team" section
+#### 14. XPath to select the first 'li' under the "Our Team" section
 first_team_li = driver.find_element(By.XPATH, "//div[@class='team']//ul/li[1]")
 #### 15. XPath to locate the "Send Message" button in the contact form
 send_message_button = driver.find_element(By.XPATH, "//form[@id='contactForm']//input[@type='submit' and @value='Send Message']")
