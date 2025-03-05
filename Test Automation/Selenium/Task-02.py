@@ -1,7 +1,7 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
+
 
 # Fixture to initialize and quit the WebDriver
 @pytest.fixture
@@ -10,6 +10,7 @@ def driver():
     driver.get("https://www.saucedemo.com/")
     yield driver
     driver.quit()
+
 
 # List of usernames for parameterized testing
 usernames = [
@@ -20,6 +21,7 @@ usernames = [
     "error_user",
     "visual_user"
 ]
+
 
 @pytest.mark.parametrize("username", usernames)
 def test_login(driver, username):
@@ -37,7 +39,6 @@ def test_login(driver, username):
     password_input.send_keys(password)
 
     submit_button.click()
-
 
     # Handle assertions
     if username == "locked_out_user":
